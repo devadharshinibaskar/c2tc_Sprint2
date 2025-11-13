@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #a8e6ff, #e0f7ff);
+  min-height: 100vh;
+}
+
+.app-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #004aad;
+  margin-bottom: 30px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  flex: 1 1 420px;
+  max-width: 450px;
+  min-width: 340px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-container input:focus {
+  border-color: #004aad;
+  box-shadow: 0 0 4px #004aad;
+}
+
+.add-btn {
+  background-color: #004aad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.add-btn:hover {
+  background-color: #0066e6;
+}
+
+/* TABLE SECTION */
+.table-container {
+  width: 100%;
+  max-width: 900px;
+  overflow-x: auto;
+  padding: 15px;
+}
+
+.table-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  background-color: #fdfdff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #004aad;
+  color: white;
+  padding: 12px 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 150px;
+}
+
+tr:hover {
+  background-color: #f1f6ff;
+}
+
+.edit-btn {
+  background-color: #0d8c2d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.edit-btn:hover {
+  background-color: #0fab38;
+}
+
+.delete-btn {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #ff5252;
+}
+
+/* For small screens */
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  table {
+    font-size: 14px;
+  }
+  th, td {
+    padding: 8px;
+  }
+}
