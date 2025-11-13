@@ -10,17 +10,17 @@ const UserForm = ({ fetchUsers, editUser, setEditUser }) => {
     status: "",
   });
 
-  // If a user is selected for editing, prefill form
+  
   useEffect(() => {
     if (editUser) setForm(editUser);
   }, [editUser]);
 
-  // Handle input changes
+  
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // Add or update user
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -35,7 +35,7 @@ const UserForm = ({ fetchUsers, editUser, setEditUser }) => {
       body: JSON.stringify(form),
     });
 
-    // Reset form after submit
+    
     setForm({
       username: "",
       email: "",

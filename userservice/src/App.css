@@ -67,7 +67,7 @@ body {
   background-color: #0066e6;
 }
 
-/* TABLE SECTION */
+
 .table-container {
   width: 100%;
   max-width: 900px;
@@ -140,7 +140,7 @@ tr:hover {
   background-color: #ff5252;
 }
 
-/* For small screens */
+
 @media (max-width: 900px) {
   .main-content {
     flex-direction: column;
